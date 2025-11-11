@@ -39,9 +39,8 @@ The goal of this project is to demonstrate the implementation of a cloud-based w
 ### 2. Connect via SSH  
 ```bash
 ssh -i "petcare.pem" ubuntu@51.21.80.118
-
-### 3. Install and Enable Apache Web Server and Deploy HTML Website  
-
+```
+### 3. Install and Enable Apache Web Server and Deploy HTML Website
 ```bash
 # Update and install Apache
 sudo apt update
@@ -59,13 +58,34 @@ cd /var/www/html
 
 # Create or edit the website file
 sudo nano index.html
-# (Paste your Pet Care Blog HTML code here)
+# (Paste your Pet Care Blog HTML code here, save and exit)
 
 # Restart Apache to apply changes
 sudo systemctl restart apache2
 
 # Verify deployment by visiting in browser:
 # http://51.21.80.118
-# or your domain:
+# or:
 # http://petcareblog.online
+```
+### 4. Create Maintenance Automation Script
+```bash
+# Create a new script file
+sudo nano maintenance.sh
+
+# Paste the following script content inside:
+#!/bin/bash
+sudo apt update -y
+sudo apt upgrade -y
+sudo systemctl restart apache2
+echo "Server maintenance complete. Apache restarted successfully!"
+
+# Save and exit (Ctrl + O, Enter, Ctrl + X)
+
+# Make the script executable
+chmod +x maintenance.sh
+
+# Run the script manually for maintenance
+./maintenance.sh
+```
 
