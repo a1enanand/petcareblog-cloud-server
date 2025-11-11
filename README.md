@@ -88,4 +88,12 @@ chmod +x maintenance.sh
 # Run the script manually for maintenance
 ./maintenance.sh
 ```
+### 5.Security and Access
+- **SSH Key Authentication:** Used private key `petcare.pem` for secure EC2 login.  
+- **Firewall Rules:** Only ports 22 (SSH) and 80 (HTTP) are open to public access.  
+- **System Updates:** Regularly applied using the `maintenance.sh` script.
+
+ ### 6.Reflection
+This project helped me understand the deployment process of web applications using AWS EC2, DNS configuration through Namecheap, and automation with shell scripting. I learned how to secure and maintain a live cloud server, and gained confidence managing web infrastructure independently.
+
 
