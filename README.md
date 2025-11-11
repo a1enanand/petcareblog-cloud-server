@@ -93,7 +93,16 @@ chmod +x maintenance.sh
 - **Firewall Rules:** Only ports 22 (SSH) and 80 (HTTP) are open to public access.  
 - **System Updates:** Regularly applied using the `maintenance.sh` script.
 
- ### 6.Reflection
+### 6.Video Demonstration
+The explainer video shows:
+1. Launching the EC2 instance.  
+2. Connecting via SSH.  
+3. Installing Apache and deploying the HTML website.  
+4. Verifying the site via both IP and domain.  
+5. Running the automated maintenance script.  
+
+  
+### 7.Reflection
 This project helped me understand the deployment process of web applications using AWS EC2, DNS configuration through Namecheap, and automation with shell scripting. I learned how to secure and maintain a live cloud server, and gained confidence managing web infrastructure independently.
 
 
