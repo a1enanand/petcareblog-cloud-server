@@ -40,3 +40,32 @@ The goal of this project is to demonstrate the implementation of a cloud-based w
 ```bash
 ssh -i "petcare.pem" ubuntu@51.21.80.118
 
+### 3. Install and Enable Apache Web Server and Deploy HTML Website  
+
+```bash
+# Update and install Apache
+sudo apt update
+sudo apt install apache2 -y
+
+# Enable and start Apache service
+sudo systemctl enable apache2
+sudo systemctl start apache2
+
+# Check that Apache is active
+sudo systemctl status apache2
+
+# Deploy HTML website
+cd /var/www/html
+
+# Create or edit the website file
+sudo nano index.html
+# (Paste your Pet Care Blog HTML code here)
+
+# Restart Apache to apply changes
+sudo systemctl restart apache2
+
+# Verify deployment by visiting in browser:
+# http://51.21.80.118
+# or your domain:
+# http://petcareblog.online
+
