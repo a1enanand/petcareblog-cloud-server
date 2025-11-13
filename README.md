@@ -101,8 +101,8 @@ The explainer video shows:
 4. Verifying the site via both IP and domain.  
 5. Running the automated maintenance script.
 
-heres the link to the video explainer : https://drive.google.com/file/d/18bPlmLmy3lRAlrj8rdNj1CrfupaprqME/view?usp=sharing
-
+Click here to watch the full video explainer:
+https://drive.google.com/file/d/18bPlmLmy3lRAlrj8rdNj1CrfupaprqME/view?usp=sharing
   
 ### 7.Reflection
 This project helped me understand the deployment process of web applications using AWS EC2, DNS configuration through Namecheap, and automation with shell scripting. I learned how to secure and maintain a live cloud server, and gained confidence managing web infrastructure independently.
