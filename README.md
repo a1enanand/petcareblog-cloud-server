@@ -99,7 +99,8 @@ The explainer video shows:
 2. Connecting via SSH.  
 3. Installing Apache and deploying the HTML website.  
 4. Verifying the site via both IP and domain.  
-5. Running the automated maintenance script.  
+5. Running the automated maintenance script.
+
 heres the link to the video explainer : https://drive.google.com/file/d/18bPlmLmy3lRAlrj8rdNj1CrfupaprqME/view?usp=sharing
 
   
